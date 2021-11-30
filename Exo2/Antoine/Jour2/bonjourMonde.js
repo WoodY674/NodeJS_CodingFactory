@@ -60,8 +60,7 @@ function countLines(callback) {
     
     for (var i = 0; i<fileContents.length; i++){
         if (path.extname(fileContents[i].toString('utf8')) == '.' + process.argv[3].toString('utf8')){
-            fileExt.push(fileContents[i])
-            
+            fileExt.push(fileContents[i])   
         }
     }
     callback()
@@ -78,4 +77,22 @@ countLines(call)
 */
 
 // EXO 6
+
+/*
+const filterFn = require('./module.js');
+const dir = process.argv[2];
+const filter = process.argv[3];
+
+filterFn(dir, filter, function (err, list) {
+    if (err) {
+        return console.error('There was an error:', err);
+    }
+
+    list.forEach(function (file) {
+        console.log(file);
+    })
+})
+*/
+
+// EXO 7
 
