@@ -1,6 +1,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const http = require('http');
 
 // EXO 1 
 
@@ -96,3 +97,5 @@ filterFn(dir, filter, function (err, list) {
 
 // EXO 7
 
+
+http.get(process.argv[2])
